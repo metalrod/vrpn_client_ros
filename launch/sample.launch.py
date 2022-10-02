@@ -18,7 +18,7 @@ def generate_launch_description():
     return launch.LaunchDescription([
         launch_ros.actions.Node(
             package='vrpn_client_ros',
-            executable='vrpn_client_node',
+            node_executable='vrpn_client_node',
             output='screen',
             emulate_tty=True,
             parameters=[parameters_file_path],
